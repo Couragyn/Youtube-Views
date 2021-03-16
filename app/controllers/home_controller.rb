@@ -21,6 +21,10 @@ class HomeController < ApplicationController
     end
 
     @youtube_video = entries[highestEntry]
+
     @last_updated = (json["feed"]["updated"]["$t"])[0...10]
+
+    # ID is needed for YouTube embed link. Unneeded characters are stripped off
+    @id = (entries[highestEntry]["id"]["$t"].split(':'))[3]
   end
 end

@@ -5,7 +5,6 @@
     <h3>Number of likes: <%= @youtube_video["yt$rating"]["numDislikes"] %></h3>
     <h3>Number of dislikes: <%= @youtube_video["yt$rating"]["numLikes"] %></h3>
 
-    <iframe width="420" height="315"
-        src="<%= @youtube_video["link"][0]["href"] %>">
-    </iframe>
+    <iframe frameborder="0" height="315" scrolling="no" src="http://www.youtube.com/embed/<%= @id %>" width="420">​
+
 </div>
