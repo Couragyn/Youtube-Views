@@ -1,24 +1,18 @@
-# README
+# Youtube-Views
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Youtube-Views shows the top YouTube video information pulled from a JSON file. https://youtube-view-count.herokuapp.com/
 
-Things you may want to cover:
+![Screenshot](app/assets/images/screenshot.png?raw=true "Screenshot")
 
-* Ruby version
+## Setup Instructions
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone repo
+2. Install `rbenv`
+   - Install `ruby-2.7.2`
+3. Install `postgres`
+   - Make sure your root username has psql createdb permission `ALTER USER user CREATEDB;`
+4. Set up ruby environment:
+   - `bundle update --bundler`
+   - `bundle install`
+5. Start rails:
+   - `rails s`
